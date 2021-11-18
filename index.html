@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Implementing  CRUD using javascript and html
+        </title>
+    </head>
+    <body>
+        <h1 name="header1" style="color: gold;">Student Data</h1>
+       <table>
+           <tr>
+              <td>
+                  <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                       <div>
+                        
+                          <label>Student ID*</label><label class="validation-error hide"
+                           id="fullNameValidationError">The field is required</label>
+                          <input type="text" name="studentId" id="studentId"><label class="validation-error hide"
+                           id="fullNameValidationError">The field is required</label>
+                       </div>
+                       
+                         <div>
+                           <label>Name</label><label>
+                           <input type="text"   name="name" id="name">
+                      </div>
+                       <div>
+                           <label>Stream</label>
+                           <input type="text"   name="stream" id="stream">
+                        </div>
+                        <div>
+                           <label>Marks</label>
+                           <input type="text"   name="marks" id="marks">
+                           <!-- <label class="validation-error hide1"
+                           id="fullNameValidationError">The field is required</label> -->
+                         </div>  
+                      <div>
+                          <input type="submit" value="Add">
+                      </div>
+                  </form>    
+              </td> 
+              <td>
+                 <input type="text" name="input1" id="myInput"  placeholder="Search by StudentId" >
+                 <input type="text" name="input2" id="myInput1" placeholder="Search by Name" >
+                 <input type="text" name="input3" id="myInput2" placeholder="Search by Stream" >
+                 <input type="text" name="input4" id="myInput3" placeholder="Search by Marks"><br>
+                  <button type="submit" onclick="searchFunByid()">Submit</button>   
+                 <button type="reset" onclick="document.getElementById('myInput').value = '';
+                 document.getElementById('myInput1').value = '';
+                 document.getElementById('myInput2').value = '';
+                 document.getElementById('myInput3').value = '';
+                 resetSearch()" name="clear1">Clear</button><br><br>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Student id</th>
+                            <th>Name</th>
+                            <th>Stream</th>
+                            <th>Marks</th> 
+                            <th>Action</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td>1</td>
+                           <td>Jack</td>
+                           <td>CSE</td>
+                           <td>89</td>
+                           <td><button  name="edit1" onClick="onEdit(this)">Edit</button> &nbsp;&nbsp;
+                            <button name="delete1" onClick="onDelete(this)">Delete</button></td>
+                       </tr>
+                       <tr>
+                        <td>2</td>
+                        <td>Rohan</td>
+                        <td>IT</td>
+                        <td>90</td>
+                        <td><button  name="edit1" onClick="onEdit(this)">Edit</button> &nbsp;&nbsp;
+                            <button name="delete1" onClick="onDelete(this)">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Mohan</td>
+                        <td>Mech</td>
+                        <td>78</td>
+                        <td><button  name="edit1" onClick="onEdit(this)">Edit</button> &nbsp;&nbsp;
+                            <button name="delete1" onClick="onDelete(this)">Delete</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </td>
+           </tr>
+       </table>
+        
+        <script src="script.js" ></script>
+    </body>
+</html>

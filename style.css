@@ -1,0 +1,135 @@
+/* body{
+    background-image: url('background.jpeg');
+} */
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+  margin-right: auto;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 3px solid  brown;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width:30%;
+    background-color: aqua;
+    padding: auto;
+    margin:  8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+a{
+    cursor: pointer;
+    color:red;
+    margin-right: 6px;
+    margin-block: auto;
+    text-size-adjust: 10px;
+}
+input[name="input1"],input[name="input2"],input[name="input3"],input[name="input4"]{
+  width:23%;
+}
+button{
+    width:30%;
+    background-color:greenyellow;
+    padding: auto;
+    margin:  8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+button[name="edit1"]{
+    width:30%;
+    background-color:sandybrown;
+    padding: auto;
+    margin:  8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px; 
+}
+button[name="delete1"]{
+    width:30%;
+    background-color:springgreen;
+    padding: auto;
+    margin:  8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px; 
+    height: 30px; 
+}
+thead{
+    background-color:bisque;
+    text-align: center;  
+}
+tr{
+    background-image: url('back1.jpeg'); 
+}
+button[name="clear1"]{
+    width:30%;
+    background-color:tomato;
+    padding: auto;
+    margin:  8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px; 
+}
+h1{
+    text-align: center;
+}
+form{
+    background-image:url('download.jpeg');
+     padding: 10px;
+}
+body{
+    background-image: url('img1.jpeg');
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color:grey;
+}
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+form div.form-action-buttons{
+    text-align: right;
+}
+h1[name="header1"]{
+    font-size: auto; 
+}
+::placeholder{
+    color: red;
+    opacity: auto;
+}
